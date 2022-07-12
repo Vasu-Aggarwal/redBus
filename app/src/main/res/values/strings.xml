@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">redBus</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="bus_tickets">Bus tickets</string>
+    <string name="search">search</string>
+    <string name="enter_source">ENTER SOURCE</string>
+    <string name="enter_destination">ENTER DESTINATION</string>
+    <string name="today">today</string>
+    <string name="tomorrow">tomorrow</string>
+
+    <string-array name="cities">
+        <item>Delhi</item>
+        <item>Lucknow</item>
+        <item>Bangalore</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+    </string-array>
+
+</resources>

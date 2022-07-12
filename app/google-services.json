@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "163991530424",
+    "project_id": "redbus-cfc21",
+    "storage_bucket": "redbus-cfc21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163991530424:android:7e7b8d4f6fb58b6884fd4d",
+        "android_client_info": {
+          "package_name": "com.example.redbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163991530424-adqfb1eq3an5mcr2n9gud3qs3q1ao69p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.redbus",
+            "certificate_hash": "1cf7a5c2b609773aac1dda11085db574b9e8a752"
+          }
+        },
+        {
+          "client_id": "163991530424-6pusl54hv58m4aullbbq8mp6f1erscc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvU3gIxX1SM770_JWU-g3C-Ji3bxQIRpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163991530424-6pusl54hv58m4aullbbq8mp6f1erscc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
