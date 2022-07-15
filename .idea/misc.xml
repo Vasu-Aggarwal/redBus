@@ -3,23 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Apps/redBus/app/src/main/res/drawable/bottom_navigation.xml" value="0.1165" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/drawable/bottom_navigation_text_style.xml" value="0.1165" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/drawable/bottom_text_navigation.xml" value="0.1165" />
         <entry key="..\:/Apps/redBus/app/src/main/res/drawable/bottomsheetround.xml" value="0.1605" />
         <entry key="..\:/Apps/redBus/app/src/main/res/drawable/custom_button.xml" value="0.1165" />
         <entry key="..\:/Apps/redBus/app/src/main/res/drawable/custom_star.xml" value="0.1165" />
         <entry key="..\:/Apps/redBus/app/src/main/res/drawable/info_popup_background.xml" value="0.1165" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/drawable/outlined_back.xml" value="0.1165" />
         <entry key="..\:/Apps/redBus/app/src/main/res/drawable/snowflake_dialog_background.xml" value="0.1165" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_book_seats.xml" value="0.17282051282051283" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_contact_info.xml" value="0.17282051282051283" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_country_language.xml" value="0.18645833333333334" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_payment_method.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_register_user.xml" value="0.17447916666666666" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_search_buses.xml" value="0.17552083333333332" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_search_location.xml" value="0.17552083333333332" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/activity_splash_screen.xml" value="0.17447916666666666" />
-        <entry key="..\:/Apps/redBus/app/src/main/res/layout/adapter_search_buses.xml" value="0.17552083333333332" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/adapter_contact_info.xml" value="0.17282051282051283" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/adapter_my_bookings.xml" value="0.17282051282051283" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/adapter_search_buses.xml" value="0.22" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_account.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_booking.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_bookings.xml" value="0.17552083333333332" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_dashboard.xml" value="0.17552083333333332" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_details.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_help.xml" value="0.17552083333333332" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_home.xml" value="0.17282051282051283" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/fragment_search_buses.xml" value="0.17552083333333332" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/info_layout.xml" value="0.17282051282051283" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/info_popup_layout.xml" value="0.22" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/more_info.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/more_info_layout.xml" value="0.17447916666666666" />
         <entry key="..\:/Apps/redBus/app/src/main/res/layout/snoflake_dialog.xml" value="0.17447916666666666" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/layout/snowflake_dialog.xml" value="0.17552083333333332" />
+        <entry key="..\:/Apps/redBus/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
       </map>
     </option>
   </component>

@@ -17,4 +17,5 @@
     <color name="light_grey">#EDEDED</color>
     <color name="yellow">#D6730A</color>
     <color name="dark_violet">#413B4C</color>
+    <color name="overlay_black">#26000000</color>
 </resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/splash_red">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.1">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/building"/>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/vertical_line"/>
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:src="@drawable/building"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtSourceLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginTop="45dp"
+                        android:id="@+id/txtDestLoc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manali"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBusTimingDeparture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:15 PM"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBusTimingArrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:20 PM"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTravelDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28 APR"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWeek"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="redBUs"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtSeatIDs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat No. A1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEE DETAILS"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center|bottom"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

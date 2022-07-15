@@ -46,6 +46,13 @@ class HomeFragment : Fragment() {
             updateCalendar(calendar)
         }
 
+        btnSwap.setOnClickListener {
+            val source = txtSource.text.toString()  //to swap source and dest
+            val dest = txtDest.text.toString()
+            txtSource.setText(dest)
+            txtDest.setText(source)
+        }
+
         txtTom.setOnClickListener {
             val calendar = Calendar.getInstance()
             calendar.add(Calendar.DATE, 1)

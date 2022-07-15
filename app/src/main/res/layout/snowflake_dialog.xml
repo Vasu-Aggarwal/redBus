@@ -9,15 +9,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deals on Top Rated Buses"
-        android:textSize="25dp"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/offer"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:src="@drawable/offer" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -36,6 +36,7 @@
         android:layout_marginTop="105dp"/>
 
     <Button
+        android:id="@+id/btnCancel"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

@@ -2,15 +2,19 @@ package com.example.redbus.ui.seats
 
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.redbus.R
 import com.example.redbus.models.DataItemModel
+import com.example.redbus.utilities.Constants
+import com.example.redbus.utilities.SharedPref
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -18,16 +22,15 @@ import kotlinx.android.synthetic.main.activity_book_seats.*
 import java.text.SimpleDateFormat
 import kotlin.math.absoluteValue
 
-class bookSeats : AppCompatActivity() {
+open class bookSeats: AppCompatActivity() {
 
     val db = Firebase.firestore
     private val documentDataList: MutableList<DataItemModel> = ArrayList()
     private lateinit var dataItemModel: MutableList<DataItemModel>
-
     private var mp = mutableMapOf<ImageView, Boolean>()
     private var totalSelectedSeats: Int = 0
     private lateinit var mdialog: Dialog
-    private var seats = arrayListOf<String>()
+    var seats = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +39,9 @@ class bookSeats : AppCompatActivity() {
 
         val key = intent.getStringExtra("key")
         val busID = intent.getStringExtra("busid")
+
+        SharedPref(this).setString(Constants.KEY, key.toString())
+        SharedPref(this).setString(Constants.BUS_ID, busID.toString())
 
         getbus(key, busID)
         setBottomSheet()
@@ -48,7 +54,15 @@ class bookSeats : AppCompatActivity() {
             mdialog = Dialog(this)
             mdialog.setContentView(R.layout.snowflake_dialog)
             mdialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-//            mdialog.window?.setLayout(1000, 300)
+            mdialog.window?.setGravity(Gravity.TOP)
+            mdialog.window?.attributes?.y = 350
+            mdialog.window?.attributes?.x = -30
+
+            val cancel = mdialog.window?.findViewById<Button>(R.id.btnCancel)
+
+            cancel?.setOnClickListener {
+                mdialog.dismiss()
+            }
             mdialog.setOnCancelListener {
                 mdialog.dismiss()
             }
@@ -61,7 +75,16 @@ class bookSeats : AppCompatActivity() {
 //            mdialog.window?.setWindowAnimations(R.style.animationDialog)  //animation not working
             mdialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             mdialog.window?.setLayout(1000, 300)
+            mdialog.window?.setGravity(Gravity.TOP)
+            mdialog.window?.attributes?.y = 510
             mdialog.show()
+        }
+
+        btnDone.setOnClickListener {
+            val intent = Intent(this, contactInfo::class.java)
+            intent.putExtra("seats", seats)
+            intent.putExtra("price", txtPrice.text.toString())
+            startActivity(intent)
         }
     }
 
@@ -580,8 +603,15 @@ class bookSeats : AppCompatActivity() {
                 val price = dataItemModel.get(0).price.toInt()
                 txtPrice.text = (price*totalSelectedSeats).toString()
                 txtSeats.text = ""
+                var currSize = 0
+                val size = seats.size
+
                 for(i in seats){
-                    txtSeats.text = txtSeats.text.toString()+ i +","
+                    currSize++
+                    if(currSize == size)
+                        txtSeats.text = txtSeats.text.toString()+ i
+                    else
+                        txtSeats.text = txtSeats.text.toString()+ i +","
                 }
             }
             else if(flag){
@@ -837,7 +867,7 @@ class bookSeats : AppCompatActivity() {
             }
 
             if(i == "J3"){
-                val img = findViewById<ImageView>(R.id.C3)
+                val img = findViewById<ImageView>(R.id.J3)
                 img.setImageResource(R.drawable.male_booked)
                 mp[J3] = false
             }

@@ -34,6 +34,9 @@
         <activity android:name=".ui.searchLoc.activitySearchLocDest" />
         <activity android:name=".ui.searchBuses.activitySearchBuses" />
         <activity android:name=".ui.seats.bookSeats" />
+        <activity android:name=".ui.seats.contactInfo" />
+        <activity android:name=".ui.registration.RegisterUser" />
+        <activity android:name=".ui.payment.paymentMethodActivity" />
     </application>
 
 </manifest>

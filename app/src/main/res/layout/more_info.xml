@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/llmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTotalSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Seats" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | " />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSeatIDs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1, A2, A3, A4, B1, B2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="₹ 1634" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

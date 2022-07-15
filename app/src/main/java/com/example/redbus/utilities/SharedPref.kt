@@ -18,5 +18,4 @@ class SharedPref(context: Context) {
     fun getString(key: String): String? {
         return sharedPref.getString(key, "")
     }
-
 }

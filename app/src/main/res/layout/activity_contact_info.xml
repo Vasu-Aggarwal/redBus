@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:isScrollContainer="true"
+        android:backgroundTint="@color/splash_red">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2">
+
+                        <ImageView
+                            android:id="@+id/btnBack"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:backgroundTint="@color/trans"
+                            android:src="@drawable/back_white"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="Zingbus Lounge RK Ashram, Delhi To zingbus Lounge Manali, Manali"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btnProfile"
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            android:backgroundTint="@color/trans"
+                            android:src="@drawable/profile_white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:layout_marginTop="57dp">
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/light_grey">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email ID"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:layout_marginTop="10dp"
+                                app:errorEnabled="true"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/etPhone"
+                                android:hint="Phone"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Passenger Information"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/black"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp1"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Primary Passenger "/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName1"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:textSize="12dp"
+                        android:id="@+id/rg1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15dp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="Male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age1"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Age"
+                            android:inputType="number"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Co-Passenger"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName2"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15sp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale2"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale2"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age2"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Age"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Co-Passenger"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName3"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15sp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age3"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Age"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Co-Passenger"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName4"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15sp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age4"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Age"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Co-Passenger"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName5"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15sp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age5"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="Age"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvp6"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                app:contentPadding="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Co-Passenger"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/seatID6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/etName6"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Name"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/rg6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender"
+                            android:textSize="15sp"
+                            android:textColor="@color/light_black"/>
+
+                        <RadioButton
+                            android:id="@+id/rbMale6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="@string/male"/>
+
+                        <RadioButton
+                            android:id="@+id/rbFemale6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="@string/female"/>
+
+                    </RadioGroup>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="10dp"
+                        app:errorEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/age6"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:hint="@string/age"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTerms"
+                android:layout_gravity="bottom"
+                android:autoLink="web"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TermsConditions"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5643"
+                        android:textSize="17dp"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/splash_red"/>
+
+                    <ImageView
+                        android:id="@+id/btnMore"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/more"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Excluding convenience fee)"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btnProceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="proceed"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textAllCaps="true"
+                    android:backgroundTint="@color/splash_red"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

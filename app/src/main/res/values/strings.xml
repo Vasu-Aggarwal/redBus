@@ -18,4 +18,11 @@
         <item>Chennai</item>
     </string-array>
 
+    <string name="TermsConditions">By clicking on Continue Booking, I agree to all the &lt;a href="https://www.google.com">Terms and Conditions&lt;/a> and
+    &lt;a href="https://www.google.com">Privacy Policy&lt;/a></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+
 </resources>

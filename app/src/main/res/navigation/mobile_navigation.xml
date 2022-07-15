@@ -12,14 +12,22 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.redbus.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_booking"
+        android:name="com.example.redbus.ui.bookings.bookings"
+        android:label="My Bookings"
+        tools:layout="@layout/fragment_bookings">
+
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.redbus.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_help"
+        android:name="com.example.redbus.ui.help.helpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.redbus.ui.account.accountFragment"
+        android:label="account"
+        tools:layout="@layout/fragment_account" />
 </navigation>

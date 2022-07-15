@@ -2,7 +2,6 @@ package com.example.redbus.ui.searchBuses
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,10 +9,10 @@ import com.example.redbus.R
 import com.example.redbus.models.DataItemModel
 import com.example.redbus.ui.searchBuses.adapter.myAdapter
 import com.example.redbus.ui.seats.bookSeats
+import com.example.redbus.utilities.Constants
+import com.example.redbus.utilities.SharedPref
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.activity_book_seats.*
 import kotlinx.android.synthetic.main.activity_search_buses.*
 import kotlinx.android.synthetic.main.activity_search_buses.txtDestLoc
 import kotlinx.android.synthetic.main.activity_search_buses.txtSourceLoc
@@ -86,6 +85,8 @@ class activitySearchBuses : AppCompatActivity(), myAdapter.ItemClickListener {
     override fun onItemClick(position: Int) {
 
         val intent = Intent(this, bookSeats::class.java)
+        val click = position+1
+        SharedPref(this).setString(Constants.CLICK, click.toString())
         intent.putExtra("busid", documentDataList.get(position).id)
         intent.putExtra("key", documentDataList.get(position).key)
         startActivity(intent)

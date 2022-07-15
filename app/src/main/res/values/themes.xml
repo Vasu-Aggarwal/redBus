@@ -15,9 +15,17 @@
     </style>
 
     <style name="animationDialog">
-
         <item name="enterAnim">@anim/zoom_in</item>
         <item name="exitAnim">@anim/zoom_out</item>
-
     </style>
+
+    <style name="BottomNavigationText" parent="@android:style/TextAppearance"/>
+    <style name="BottomNavigationText.Selected">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="BottomNavigationText.unSelected">
+        <item name="android:textSize">13sp</item>
+    </style>
+
 </resources>
